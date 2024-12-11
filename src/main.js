@@ -1,4 +1,4 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
 import { generateWallData } from './maze.js';
 import { tiltSpeed, tilt, tiltDirection, setTiltSpeed } from './control.js'
 import { detectSphereBoxCollision } from './collision_detection.js';
