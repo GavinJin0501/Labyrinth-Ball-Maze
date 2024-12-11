@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labyrinth</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="instructions">Use W, A, S, D to tilt the board. <br/> Reach to the bottom left of the board!</div>
+
+    <!-- Game Logic Buttons -->
+    <div id="ui">
+        <button id="resetMazeButton" class="game-button">🔄 Reset Maze</button>
+        <button id="newMazeButton" class="game-button">🔄 New Maze</button>
+    </div>
+
+    <!-- Sliding Panel -->
+    <div id="control-panel">
+        <!-- Restitution Control -->
+        <div class="control-row">
+            <label for="restitutionSlider">Restitution</label>
+            <input type="range" id="restitutionSlider" min="0" max="1" step="0.1" value="0.5">
+            <span id="restitutionValue">0.5</span>
+        </div>
+
+        <!-- Friction Control -->
+        <div class="control-row">
+            <label for="frictionSlider">Friction</label>
+            <input type="range" id="frictionSlider" min="0.8" max="1" step="0.01" value="0.99">
+            <span id="frictionValue">0.99</span>
+        </div>
+
+        <!-- Tilt Speed Control -->
+        <div class="control-row">
+            <label for="tiltSpeedSlider">Sensitivity</label>
+            <input type="range" id="tiltSpeedSlider" min="0.001" max="0.01" step="0.001" value="0.005">
+            <span id="tiltSpeedValue">0.005</span>
+        </div>
+
+        <!-- Boundary Toggle -->
+        <div class="control-row">
+            <label for="hasBoundary">Challenge</label>
+            <input type="checkbox" id="hasBoundary">
+            <span></span> <!-- Empty span to maintain alignment -->
+        </div>
+    
+    
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
+
